@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Page title</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#"><img src="images/rl2.png" alt="logo"></a>
+        <i class="bx bx-menu menu-icon" onclick="openMenu()"></i>
+        <div id="navMenu" class="navMenu">
+            <i class="bx bx-x close-icon" onclick="closeMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ******* sub-header session ****** -->
+     <section class="sub-header" id="sub-header">
+        <h1>About <span>Me</span></h1>
+     </section>
+    
+    <!-- ******** About section ******** -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/l14.jpeg" alt="" width="280px" height="500px">
+        </div>
+        <div class="about-text">
+            
+            <h4><span>I'm </span>a <span>STEM</span> Innovator</h4>
+            <p>As a STEM Innovator with innovation identity, I am passionate about exploring the crossroads of science, technology, and creativity. My journey is driven by curiosity and the challenge of transforming abstract concepts into tangible solutions. Whether building intelligent systems, experimenting with automation, or crafting interactive digital experiences, I see technology not only as a tool but as a canvas for innovation. I bring together logical precision with creative problem-solving, blending the structured world of programming with the artistry of design. Through experimenting with interactive projects and developing future-ready applications, I’ve nurtured a mindset that thrives on both detail and imagination. For me, each project is an opportunity to bridge theory with practice, to push beyond boundaries, and to contribute meaningfully to a future shaped by science and technology.</p>
+            <a href="#" class="btn" onclick="window.open('mailto: zarak6945@gmail.com?subject=Connecting with you x codebloom Hub!&body=Hi%20Fateemah%20I%20want%20to%20connect%20with%20you...')">Let's connect</a>
+        </div>        
+    </section>
+
+    <section class="others" id="others">
+        <div class="sub-text-title">
+            <h2>Why <span>Me?</span></h2>
+        </div>
+        <div class="others-img">
+            <img src="images/rl1.png">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="others-text">
+            <h3><span>As</span> a <span>STEM</span> Innovator</h3>
+            <p>
+                - I work with curiosity, logic, and innovation to bring ideas alive.<br/><br/>
+                - My path combines learning, design, and innovation through technology.<br/><br>
+                - I’m a tech-driven creator passionate about coding, design, and digital solutions.<br/><br/> 
+                <!-- - From games to web projects, I use each step to sharpen my skills and creativity.<br/><br>             -->
+        </div>
+        <div>
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+    </section>
+    
+
+    <!-- ******* Footer ****** -->
+    <footer class="footer">
+    <div class="attribution">
+        <p>Design with <i class='bx bx-heart-circle'></i>by Zara-Kay</p>
+    </div>
+    <div class="move-up">
+        <a href="#sub-header"><i class='bx bx-up-arrow-alt' ></i></a>
+    </div>
+    </footer>
+
+    <!-- JS for toggle menu -->
+    <script>
+    var navMenu = document.getElementById("navMenu");
+
+    function openMenu() {
+        navMenu.style.right = "0";
+    }
+
+    function closeMenu() {
+        navMenu.style.right = "-200px";
+    }
+    </script>
+</body>
+</html>

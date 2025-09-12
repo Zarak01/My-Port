@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Page title</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#"><img src="images/rl2.png" alt="logo"></a>
+        <i class="bx bx-menu menu-icon" onclick="openMenu()"></i>
+        <div id="navMenu" class="navMenu">
+            <i class="bx bx-x close-icon" onclick="closeMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ******* sub-header session ****** -->
+     <section class="sub-header" id="sub-header">
+        <h1><span>My</span> Services.</h1>
+     </section>
+    
+    <!-- ******* Services session ******* -->
+    
+    <section class="services" id="services">
+        <div class="text-title">
+            <h2>What I <span>Do?</span> </h2>
+        </div>
+        <div class="services-content">
+            <div class="box">
+                <div class="icons">
+                    <i class="bx bx-code"></i>
+                </div>
+                <h3>Frontend Development</h3>
+                <p>I focus on creating user-friendly and responsive interfaces that bring ideas to life on the web. My goal is to write clean, structured code and design layouts that not only function well but also give users a smooth and engaging experience. Every project helps me refine my skills in building interfaces that balance usability with creativity.</p>
+                <a href="#" class="btn" onclick="window.open('mailto: zarak6945@gmail.com?subject=Connecting with you x through your website!&body=Hello,%20I%20will%20like%20to%20start%20a%20project%20with%20you...')">Start a Project</a>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <i class="bx bx-minus-back"></i>
+                </div>
+                <h3>Visual Design</h3>
+                <p>enjoy crafting visuals that are simple, clear, and appealing. For me, design is about more than looks — it’s about communication. I use visuals to make digital experiences intuitive, helping ideas stand out in a way that is both creative and meaningful.</p>
+                <a href="#" class="btn" onclick="window.open('mailto: zarak6945@gmail.com?subject=Connecting with you x through your website!&body=Hello,%20I%20will%20like%20to%20start%20a%20project%20with%20you...')">Start a Project</a>
+            </div>
+            
+            <div class="box">
+                <div class="icons">
+                    <i class="bx bxl-stack-overflow"></i>
+                </div>
+                <h3>Game Development</h3>
+                <p>I explore game development as a way to apply logic, problem-solving, and creativity in coding. From classic projects like Snake to racing challenges, these games help me grow as a programmer while creating interactive experiences. Game projects are an extension of my coding journey, combining fun with learning.</p>
+                <a href="#" class="btn" onclick="window.open('mailto: zarak6945@gmail.com?subject=Connecting with you x through your website!&body=Hello,%20I%20will%20like%20to%20start%20a%20project%20with%20you...')">Start a Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="others" id="others">
+        <div class="sub-text-title">
+            <h2> <span>Other</span> Services</h2>
+        </div>
+        <div class="others-img">
+            <img src="images/AI1.jpeg">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="others-text">
+            <h3><span>Learning & Research </span> in AI/ML</h3>
+            <p>
+                Artificial Intelligence and Machine Learning are the fields I am deeply passionate about and the direction I ultimately aim to specialize in. My journey started with Python, where I explored logic through small games and problem-solving projects, and expanded into web development and visual design to strengthen my technical foundation. These areas give me practical skills and creativity, but my true focus is preparing myself for AI and ML. Right now, I am building step by step; sharpening my coding, understanding digital systems, and experimenting with how technology can solve problems. I see every project, whether a website, interface, or game, as part of the groundwork for mastering AI. My long-term goal is to shift my focus completely to Artificial Intelligence and Machine Learning, where I hope to create intelligent systems that can analyze, learn, and provide meaningful impact. This path excites me the most because it combines science, innovation, and creativity to build solutions that go beyond the ordinary. For me, AI/ML is not just a career path but the heart of my vision as a STEM innovator.<br/><br>
+
+            </p>
+            
+        </div>
+        <div>
+            <a href="#" class="btn" onclick="window.open('mailto: zarak6945@gmail.com?subject=Connecting with you x your website!&body=Assalamu%20Alaykum%20Fateemah%20I%20want%20to%20connect%20with%20you...')">Collab Now</a>
+        </div>
+    </section>
+
+    <!-- ******* Footer ****** -->
+    <footer class="footer">
+    <div class="attribution">
+        <p>Design with <i class='bx bx-heart-circle'></i>by Zara-Kay</p>
+    </div>
+    <div class="move-up">
+        <a href="#sub-header"><i class='bx bx-up-arrow-alt' ></i></a>
+    </div>
+    </footer>
+
+    <!-- JS for toggle menu -->
+    <script>
+        var navMenu = document.getElementById("navMenu");
+
+        function openMenu() {
+            navMenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            navMenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
